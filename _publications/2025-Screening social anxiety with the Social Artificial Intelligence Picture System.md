@@ -7,7 +7,6 @@ excerpt: 'We developed the Social Artificial Intelligence Picture System (SAIPS)
 date: Jan 2025
 venue: 'Journal of Anxiety Disorders'
 paperurl: 'https://JiayiFan77.github.io/files/Ju et al. (2025)_Screening social anxiety with the Social Artificial Intelligence Picture System.pdf'
-citation: 'Ju, Q., Xu, Z., Chen, Z., Fan, J., Zhang, H., & Peng, Y. (2025). Screening social anxiety with the Social Artificial Intelligence Picture System. <i>Journal of Anxiety Disorders</i>, <i>109</i>, 102955. <a href="https://doi.org/10.1016/j.janxdis.2024.102955">https://doi.org/10.1016/j.janxdis.2024.102955</a>
-'
+citation: 'Ju, Q., Xu, Z., Chen, Z., Fan, J., Zhang, H., & Peng, Y. (2025). Screening social anxiety with the Social Artificial Intelligence Picture System. <i>Journal of Anxiety Disorders</i>, <i>109</i>, 102955. <a href="https://doi.org/10.1016/j.janxdis.2024.102955">https://doi.org/10.1016/j.janxdis.2024.102955</a>'
 ---
 
