@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "Screening social anxiety with the Social Artificial Intelligence Picture System"
 collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-4
