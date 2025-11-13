@@ -10,17 +10,17 @@ redirect_from:
 I am a Ph.D. student in Developmental Psychology at Pennsylvania State University, working with Dr. Koraly Pérez-Edgar in the [Cognition, Affect, and Temperament Lab](https://www.catlabpsu.com), and planning to pursue a dual-title degree in Social Data Analytics.
 
 ## Education
-Ph.D. in Developmental Psychology, Pennsylvania State University <span style="float:right;">2025 – Present</span>  
+<img src="../images/psu_logo.png" alt="PSU Logo" style="width:24px; vertical-align:middle;"> Ph.D. in Developmental Psychology, Pennsylvania State University <span style="float:right;">2025 – Present</span>  
 <span style="font-size: 16px;">*Advisor: Dr. Koraly Pérez-Edgar*</span>
 
-B.S. in Psychology, Peking University <span style="float:right;">2020 – 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<img src="../images/pku_logo.png" alt="PKU Logo" style="width:24px; vertical-align:middle;"> B.S. in Psychology, Peking University <span style="float:right;">2020 – 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 ## Research Interest
 *For Research Questions* 
 
 My current research focuses on how children internally process <span style="color:#3CB5A5; font-weight:bold;">**social feedback**</span>. For example, how children differentiate between different types of social feedback, how they generate expectations of social feedback, and how this feedback updates their internal representations of self and others. I am particularly interested in the role of family in this process. 
 
-Another dimension of my research adopts a person-centered perspective. On one hand, I aim to characterize **<span style="color:#2B7A78; font-weight:bold;">individual differences</span>** in cognitive and social processes and examine how these differences relate to temperament, personality traits, and developmental psychopathology. On the other hand, I investigate real-time **<span style="color:#2B7A78; font-weight:bold;">dynamics</span>** of social interactions at the second-by-second level, as well as trial-by-trial changes in personal cognition, with the goal of uncovering the mechanisms underlying social interaction and individual behavior.
+Another dimension of my research adopts a person-centered perspective. On one hand, I aim to characterize **<span style="color:#3CB5A5; font-weight:bold;">individual differences</span>** in cognitive and social processes and examine how these differences relate to temperament, personality traits, and developmental psychopathology. On the other hand, I investigate real-time **<span style="color:#3CB5A5; font-weight:bold;">dynamics</span>** of social interactions at the second-by-second level, as well as trial-by-trial changes in personal cognition, with the goal of uncovering the mechanisms underlying social interaction and individual behavior.
 
 *For Research Methods*
 
