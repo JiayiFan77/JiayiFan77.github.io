@@ -10,22 +10,9 @@ redirect_from:
 I am a Ph.D. student in Developmental Psychology at Pennsylvania State University, working with Dr. Koraly Pérez-Edgar in the [Cognition, Affect, and Temperament Lab](https://www.catlabpsu.com), and planning to pursue a dual-title degree in Social Data Analytics.
 
 ## Education
-<div style="display:flex; align-items:center; justify-content:space-between;">
-  <div style="display:flex; align-items:center; gap:6px;">
-    <img src="../images/psu_logo.jpg" alt="PSU Logo" style="width:24px;">
-    <span>Ph.D. in Developmental Psychology, Pennsylvania State University</span>
-  </div>
-  <span>2025 – Present</span>
-</div>
-<small style="margin-left:30px;">Advisor: Dr. Koraly Pérez-Edgar</small>
-
-<div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
-  <div style="display:flex; align-items:center; gap:6px;">
-    <img src="../images/pku_logo.png" alt="PKU Logo" style="width:30px;">
-    <span>B.S. in Psychology, Peking University</span>
-  </div>
-  <span>2020 – 2025</span>
-</div>
+Ph.D. in Developmental Psychology, Pennsylvania State University <img src="../images/psu_logo.jpg" alt="PSU Logo" style="width:24px; vertical-align:middle; margin-right:6px;">  <span style="float:right;">2025 – Present</span> <span style="font-size: 16px;">  
+*Advisor: Dr. Koraly Pérez-Edgar*</span>  
+B.S. in Psychology, Peking University <img src="../images/pku_logo.png" alt="PKU Logo" style="width:30px; vertical-align:middle;">  <span style="float:right;">2020 – 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 ## Research Interest
 *For Research Questions* 
