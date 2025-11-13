@@ -10,7 +10,7 @@ redirect_from:
 I am a Ph.D. student in Developmental Psychology at Pennsylvania State University, working with Dr. Koraly Pérez-Edgar in the [Cognition, Affect, and Temperament Lab](https://www.catlabpsu.com), and planning to pursue a dual-title degree in Social Data Analytics.
 
 ## Education
-<img src="../images/psu_logo.jpg" alt="PSU Logo" style="width:24px; vertical-align:middle;"> Ph.D. in Developmental Psychology, Pennsylvania State University <span style="float:right;">2025 – Present</span>  
+<img src="../images/psu_logo.jpg" alt="PSU Logo" style="width:24px; vertical-align:middle; margin-right:6px;"> Ph.D. in Developmental Psychology, Pennsylvania State University <span style="float:right;">2025 – Present</span>  
 <span style="font-size: 16px;">*Advisor: Dr. Koraly Pérez-Edgar*</span>
 
 <img src="../images/pku_logo.png" alt="PKU Logo" style="width:30px; vertical-align:middle;"> B.S. in Psychology, Peking University <span style="float:right;">2020 – 2025&nbsp;&nbsp;&nbsp;&nbsp;</span>
