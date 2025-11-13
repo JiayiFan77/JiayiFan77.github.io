@@ -25,9 +25,9 @@ Another dimension of my research adopts a person-centered perspective. On one ha
 *For Research Methods*
 
 ![Research Methods](../images/research_methods.png)
-*Notes:  
+<span style="font-size: 10px;">*Notes:  
 for preference, 1 = object to using it; 5 = neutral, will use only when necessary; 9 = big fan, will follow anything relevant;  
-for proficiency, 1 = no knowledge, need to learn from scratch;  5 = basic knowledge, can read but cannot use independently; 7 = fluent, can use comfortably; 9 = mother tongue, ask me and I’ll happily help!*
+for proficiency, 1 = no knowledge, need to learn from scratch;  5 = basic knowledge, can read but cannot use independently; 7 = fluent, can use comfortably; 9 = mother tongue, ask me and I’ll happily help!*</span>
 
 My advisor uses a metaphor to describe research methods as languages: for example, a mother tongue, a fluent language, a language one can read but not speak, or an unfamiliar language. I adopt the same metaphor to introduce my research methodology. As an early-stage researcher, I consider both my preference and proficiency for each method.
 
