@@ -24,8 +24,19 @@ My current research focuses on how children internally process social feedback. 
 Another dimension of my research adopts a person-centered perspective. On one hand, I aim to characterize individual differences in cognitive and social processes and examine how these differences relate to temperament, personality traits, and developmental psychopathology. On the other hand, I investigate real-time dynamics of social interactions at the second-by-second level, as well as trial-by-trial changes in personal cognition, with the goal of uncovering the mechanisms underlying social interaction and individual behavior.
 
 ### For Research Methods 
-*Computational Modeling*, *Behavior Coding*, *EEG*, *Machine learning*
-My advisor uses a metaphor to describe research methods as languages: for example, a mother tongue, a fluent language, a language one can read but not speak, or an unfamiliar language. I adopt the same metaphor to introduce my research methodology. As an early-stage researcher, I consider both my preference and proficiency for each method. I present these in a table, where preference rages from 1-9 (1 = object to using it; 5 = neutral, will use only when necessary; 9 = big fan, will follow anything relevant), and proficiency ranges from 1-9 (1 = no knowledge, need to learn from scratch; 5 = basic knowledge, can read but cannot use independently; 7 = fluent, can use comfortably; 9 = mother tongue, ask me and I’ll happily help!)
+*Computational Modeling*, *Behavior Coding*, *EEG*, *Machine learning*  
+My advisor uses a metaphor to describe research methods as languages: for example, a mother tongue, a fluent language, a language one can read but not speak, or an unfamiliar language. I adopt the same metaphor to introduce my research methodology. As an early-stage researcher, I consider both my preference and proficiency for each method. 
+
+I present these in a figure, where:
+- Preference
+  - 1 = object to using it
+  - 5 = neutral, will use only when necessary
+  - 9 = big fan, will follow anything relevant
+- Proficiency
+  - 1 = no knowledge, need to learn from scratch
+  - 5 = basic knowledge, can read but cannot use independently
+  - 7 = fluent, can use comfortably
+  - 9 = mother tongue, ask me and I’ll happily help!)
 ![Research Methods](../images/research_methods.png)
 
 # Previous Experience
