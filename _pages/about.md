@@ -9,7 +9,7 @@ redirect_from:
 
 I am a Ph.D. student in Developmental Psychology at Pennsylvania State University, working with Dr. Koraly Pérez-Edgar in the [Cognition, Affect, and Temperament Lab](https://www.catlabpsu.com), and planning to pursue a dual-title degree in Social Data Analytics.
 
-## Education
+# Education
 **Ph.D. in Developmental Psychology, Pennsylvania State University** <span style="float:right;">2025–Present</span>  
 *Advisor: Dr. Koraly Pérez-Edgar*
 
@@ -21,8 +21,7 @@ I am a Ph.D. student in Developmental Psychology at Pennsylvania State Universit
 My current research focuses on how children internally process social feedback. For example, how children differentiate between different types of social feedback, how they generate expectations of social feedback, and how this feedback updates their internal representations of self and others. I am particularly interested in the role of family in this process. 
 
 **Individual Differences**, **Within-person Dynamics**
-Another dimension of my research is understanding within-person processes. I aim to characterize individual differences in cognitive and social processes and examine how these differences relate to temperament, personality traits, and psychopathology. Additionally, I study real-time dynamics of social interactions at the trial-by-trial level, with the goal of unfolding the processes underlying behavior and social interaction.
-
+Another dimension of my research adopts a person-centered perspective. On one hand, I aim to characterize individual differences in cognitive and social processes and examine how these differences relate to temperament, personality traits, and developmental psychopathology. On the other hand, I investigate real-time dynamics of social interactions at the second-by-second level, as well as trial-by-trial changes in personal cognition, with the goal of uncovering the mechanisms underlying social interaction and individual behavior.
 
 For research method and pathway: Methodologically, I enjoy using computational modeling to study behavior, but I am also open to incorporating other approaches, such as EEG, fMRI, and biological data, when appropriate.
 
