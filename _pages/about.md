@@ -35,4 +35,4 @@ As an undergraduate, I worked with Dr. Ka Ip (University of Minnesota) on neighb
 
 Outside of research, I survive on three nutrients: board games, drums, and travel.
 
-You can find my CV here (updated November 2025): [Jiayi's CV](../assets/Jiayi_Fan_cv_11_2025.pdf)
+You can find my CV here (updated November 2025): [Jiayi's CV](../assets/Jiayi_Fan_cv_03_2026.pdf)
