@@ -41,3 +41,12 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* Keep the profile sidebar in the page flow on narrower desktop screens. */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    overflow: visible;
+    padding-top: 0;
+  }
+}
