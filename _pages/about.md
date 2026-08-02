@@ -34,8 +34,18 @@ My advisor uses a metaphor to describe research methods as languages: a mother t
 
 ## Previous Experience
 
-As an undergraduate, I worked with Dr. Ka Ip at the University of Minnesota on neighborhood influences on brain structure; Dr. Zhi Li at Mt. Hope Family Center, University of Rochester, on parent child relationships and children’s sensory processing sensitivity; Dr. Yujia Peng at Peking University on cognitive processes in social anxiety; and Dr. Yinyin Zang at Peking University on adolescent interventions.
+As an undergraduate, I worked on projects spanning developmental neuroscience, parent child relationships, social anxiety, and adolescent intervention.
+
+* **Dr. Ka Ip, University of Minnesota**  
+  Neighborhood influences on brain structure.
+
+* **Dr. Zhi Li, Mt. Hope Family Center, University of Rochester**  
+  Parent child relationships and children's sensory processing sensitivity.
+
+* **Dr. Yujia Peng, Peking University**  
+  Cognitive processes in social anxiety.
+
+* **Dr. Yinyin Zang, Peking University**  
+  Adolescent interventions.
 
 Outside of research, I survive on three nutrients: board games, drums, and travel.
-
-You can find my CV here: [Jiayi's CV](../assets/Jiayi_Fan_cv_03_2026.pdf)
