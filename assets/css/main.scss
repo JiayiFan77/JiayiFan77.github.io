@@ -48,6 +48,10 @@
   --constellation-accent-one: #3c8f8a;
   --constellation-accent-two: #627f9d;
   --constellation-accent-three: #a77a3e;
+  --masthead-surface: rgba(244, 240, 224, 0.9);
+  --masthead-ink: #294d3b;
+  --masthead-accent: #4b8178;
+  --masthead-border: rgba(61, 83, 65, 0.22);
 }
 
 html[data-theme="dark"] {
@@ -58,6 +62,10 @@ html[data-theme="dark"] {
   --constellation-accent-one: #76c0b9;
   --constellation-accent-two: #9ab4ce;
   --constellation-accent-three: #d0a86d;
+  --masthead-surface: rgba(35, 42, 39, 0.92);
+  --masthead-ink: #d8e8df;
+  --masthead-accent: #8fc5ba;
+  --masthead-border: rgba(216, 232, 223, 0.2);
 }
 
 body {
@@ -66,16 +74,18 @@ body {
     linear-gradient(
       90deg,
       rgba(248, 246, 238, 0.46) 0%,
-      rgba(248, 246, 238, 0.52) 12%,
-      rgba(248, 246, 238, 0.76) 22%,
-      rgba(248, 246, 238, 0.89) 29%,
-      rgba(248, 246, 238, 0.92) 62%,
-      rgba(248, 246, 238, 0.79) 70%,
-      rgba(248, 246, 238, 0.55) 82%,
+      rgba(248, 246, 238, 0.5) 8%,
+      rgba(248, 246, 238, 0.6) 18%,
+      rgba(248, 246, 238, 0.75) 28%,
+      rgba(248, 246, 238, 0.88) 36%,
+      rgba(248, 246, 238, 0.91) 58%,
+      rgba(248, 246, 238, 0.85) 66%,
+      rgba(248, 246, 238, 0.72) 76%,
+      rgba(248, 246, 238, 0.56) 88%,
       rgba(248, 246, 238, 0.44) 100%
     ),
     url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
-  background-position: center, center 46%;
+  background-position: center, center 20%;
   background-size: 100% 100%, cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -87,15 +97,62 @@ html[data-theme="dark"] body {
     linear-gradient(
       90deg,
       rgba(36, 38, 38, 0.68) 0%,
-      rgba(36, 38, 38, 0.73) 12%,
-      rgba(36, 38, 38, 0.82) 22%,
-      rgba(36, 38, 38, 0.9) 29%,
-      rgba(36, 38, 38, 0.92) 62%,
-      rgba(36, 38, 38, 0.84) 70%,
-      rgba(36, 38, 38, 0.75) 82%,
+      rgba(36, 38, 38, 0.71) 8%,
+      rgba(36, 38, 38, 0.77) 18%,
+      rgba(36, 38, 38, 0.84) 28%,
+      rgba(36, 38, 38, 0.89) 36%,
+      rgba(36, 38, 38, 0.91) 58%,
+      rgba(36, 38, 38, 0.87) 66%,
+      rgba(36, 38, 38, 0.81) 76%,
+      rgba(36, 38, 38, 0.74) 88%,
       rgba(36, 38, 38, 0.67) 100%
     ),
     url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
+}
+
+/* A quiet, painterly navigation palette that remains legible over the artwork. */
+.masthead {
+  background: var(--masthead-surface);
+  border-bottom: 1px solid var(--masthead-border);
+  box-shadow: 0 7px 24px rgba(39, 58, 46, 0.08);
+  -webkit-backdrop-filter: blur(12px) saturate(0.85);
+  backdrop-filter: blur(12px) saturate(0.85);
+}
+
+.masthead::after {
+  background: transparent;
+}
+
+.masthead__menu-item,
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a {
+  color: var(--masthead-ink);
+}
+
+.greedy-nav a:hover {
+  color: var(--masthead-accent);
+}
+
+.greedy-nav .visible-links a::before {
+  height: 2px;
+  background: var(--masthead-accent);
+}
+
+.greedy-nav button {
+  border-radius: 3px;
+  background-color: var(--masthead-ink);
+}
+
+.greedy-nav .hidden-links {
+  border-color: var(--masthead-border);
+  background: var(--masthead-surface);
+}
+
+.greedy-nav .hidden-links a:hover {
+  background: rgba(75, 129, 120, 0.12);
 }
 
 /* Keep the profile and page in separate grid columns on desktop. */
