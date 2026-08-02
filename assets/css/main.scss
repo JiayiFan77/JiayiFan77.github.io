@@ -2,10 +2,8 @@
 ---
 
 /*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * This file controls what is imported from /_sass.
+ * The first two lines are required by Jekyll.
  */
 
 @import
@@ -42,41 +40,122 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Desktop layout for the profile sidebar and main content. */
+:root {
+  --constellation-ink: #245c61;
+  --constellation-text: #4d595a;
+  --constellation-line: rgba(54, 115, 116, 0.36);
+  --constellation-wash: rgba(255, 255, 255, 0.24);
+  --constellation-accent-one: #3c8f8a;
+  --constellation-accent-two: #627f9d;
+  --constellation-accent-three: #a77a3e;
+}
+
+html[data-theme="dark"] {
+  --constellation-ink: #b8dddd;
+  --constellation-text: #e1e7e7;
+  --constellation-line: rgba(184, 221, 221, 0.35);
+  --constellation-wash: rgba(36, 43, 43, 0.38);
+  --constellation-accent-one: #76c0b9;
+  --constellation-accent-two: #9ab4ce;
+  --constellation-accent-three: #d0a86d;
+}
+
+body {
+  background:
+    linear-gradient(rgba(248, 246, 238, 0.86), rgba(248, 246, 238, 0.92)),
+    url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}") center center / cover fixed;
+}
+
+html[data-theme="dark"] body {
+  background:
+    linear-gradient(rgba(36, 38, 38, 0.9), rgba(36, 38, 38, 0.94)),
+    url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}") center center / cover fixed;
+}
+
+/* Keep the profile and page in separate grid columns on desktop. */
 @media screen and (min-width: 1024px) {
   #main {
     display: grid;
     grid-template-columns: minmax(190px, 240px) minmax(0, 1fr);
-    column-gap: 3rem;
+    column-gap: clamp(2rem, 4vw, 3rem);
     align-items: start;
   }
 
   .sidebar {
     position: sticky;
-    top: 90px;
+    top: 86px;
     width: auto;
     max-width: none;
     height: calc(100vh - 100px);
+    margin: 0;
+    padding: 0;
     overflow-y: auto;
-    padding-top: 0;
-    margin: -1.25rem 0 0;;
     grid-column: 1;
     grid-row: 1;
   }
 
   .page,
   .archive {
-    float: none;
+    min-width: 0;
     width: auto;
     margin: 0;
     padding: 0;
+    float: none;
     grid-column: 2;
     grid-row: 1;
   }
 }
 
-.author__urls-wrapper .btn {
-  display: none;
+/* Undo the theme's intermediate fixed sidebar before the desktop grid starts. */
+@media screen and (max-width: 1023px) {
+  #main {
+    display: block;
+  }
+
+  .sidebar,
+  .page,
+  .archive {
+    position: static;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    float: none;
+  }
+
+  .sidebar {
+    margin-bottom: 2rem;
+  }
+
+  .sidebar > [itemscope] {
+    display: grid;
+    grid-template-columns: minmax(80px, 120px) minmax(0, 1fr);
+    column-gap: 1.25rem;
+    align-items: start;
+  }
+
+  .sidebar > [itemscope] > .author__avatar {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .sidebar > [itemscope] > .author__content,
+  .sidebar > [itemscope] > .author__urls-wrapper {
+    grid-column: 2;
+  }
+
+  .sidebar .author__urls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+}
+
+.author__urls-wrapper {
+  cursor: default;
+  z-index: auto;
 }
 
 .author__urls {
@@ -107,6 +186,10 @@
   padding: 0;
 }
 
+.sidebar .author__desktop {
+  display: block;
+}
+
 .sidebar .author__avatar {
   margin-bottom: 0.75rem;
 }
@@ -118,6 +201,39 @@
 
 .sidebar .author__content {
   margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 560px) {
+  .sidebar > [itemscope] {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    column-gap: 1rem;
+  }
+
+  .sidebar > [itemscope] > .author__avatar {
+    grid-row: 1;
+  }
+
+  .sidebar > [itemscope] > .author__urls-wrapper {
+    grid-column: 1 / -1;
+    margin-top: 0.4rem;
+  }
+
+  .sidebar .author__avatar img {
+    width: 82px;
+  }
+
+  .sidebar .author__urls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.2rem 0.75rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .sidebar .author__urls {
+    grid-template-columns: 1fr;
+  }
 }
 
 .educationItem {
@@ -146,233 +262,115 @@
   }
 }
 
-.researchMap {
-  margin: 2.5rem 0 3rem;
-  padding: 1.5rem;
-  border: 1px solid #dce9e7;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #f7fbfa, #ffffff);
-}
-
-.researchMapLabel {
-  margin: 0 0 1rem;
-  color: #3cb5a5;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.researchMapFlow {
-  display: flex;
-  align-items: stretch;
-  gap: 0.75rem;
-}
-
-.researchNode {
-  flex: 1;
-  min-width: 0;
-  padding: 1rem;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 8px 20px rgba(35, 59, 83, 0.08);
-}
-
-.researchNumber {
-  color: #3cb5a5;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.researchNode h3 {
-  margin: 0.35rem 0 0.5rem;
-  color: #233b53;
-  font-size: 1.1rem;
-}
-
-.researchNode p {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
-
-.researchConnector {
-  align-self: center;
-  color: #3cb5a5;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-@media screen and (max-width: 760px) {
-  .researchMapFlow {
-    flex-direction: column;
-  }
-
-  .researchConnector {
-    align-self: center;
-    transform: rotate(90deg);
-  }
-}
-body {
-  background:
-    linear-gradient(rgba(248, 246, 238, 0.84), rgba(248, 246, 238, 0.9)),
-    url("/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg") center center / cover fixed;
-}
-
 /* Research constellation */
 .researchConstellation {
-  margin: 3.5rem 0 4.25rem;
-  padding: 2.4rem 2.5rem 1.9rem;
+  margin: 2.75rem 0 3.25rem;
+  padding: 1.45rem 0.5rem 1.15rem;
   overflow: hidden;
-  border: 1px solid rgba(31, 89, 91, 0.12);
-  border-radius: 18px;
+  border-top: 1px solid var(--constellation-line);
+  border-bottom: 1px solid var(--constellation-line);
   background:
-    radial-gradient(circle at 50% 60%, rgba(100, 193, 194, 0.13), transparent 31%),
-    radial-gradient(circle at 30% 78%, rgba(222, 169, 76, 0.12), transparent 23%),
-    rgba(255, 255, 255, 0.42);
-}
-
-.researchConstellationIntro {
-  position: relative;
-  z-index: 2;
-}
-
-.researchConstellationEyebrow {
-  margin: 0 0 0.35rem;
-  color: #4f8a8d;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.researchConstellation h2 {
-  margin: 0;
-  color: #124f55;
-  font-size: clamp(1.65rem, 3vw, 2.2rem);
+    radial-gradient(circle at 43% 30%, rgba(84, 151, 146, 0.1), transparent 30%),
+    radial-gradient(circle at 17% 82%, rgba(167, 122, 62, 0.08), transparent 24%),
+    var(--constellation-wash);
 }
 
 .researchConstellationMap {
   position: relative;
-  min-height: 405px;
-  margin-top: 1.75rem;
+  min-height: 360px;
+}
+
+.constellationLines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.constellationLines path {
+  fill: none;
+  stroke: var(--constellation-line);
+  stroke-width: 1.35;
+  vector-effect: non-scaling-stroke;
 }
 
 .constellationItem {
   position: absolute;
-  z-index: 2;
-  width: min(32%, 265px);
+  z-index: 1;
+  width: min(30%, 250px);
+  color: var(--constellation-text);
+  will-change: transform;
 }
 
 .constellationItem h3 {
-  margin: 0 0 0.42rem;
-  color: #175b61;
-  font-size: 1.28rem;
+  margin: 0 0 0.4rem;
+  color: var(--constellation-ink);
+  font-family: Georgia, serif;
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
-.constellationItem p {
+.page__content .constellationItem p {
   margin: 0;
-  color: #4d5658;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  color: var(--constellation-text);
+  font-size: 0.9rem;
+  line-height: 1.58;
 }
 
 .constellationInformation {
-  top: 7%;
-  left: 35%;
-  animation: constellationFloatOne 7s ease-in-out infinite;
+  top: 4%;
+  left: 38%;
+  animation: constellationFloatOne 10s ease-in-out infinite;
 }
 
 .constellationTemperament {
-  top: 49%;
-  right: 2%;
-  animation: constellationFloatTwo 8s ease-in-out infinite;
+  top: 52%;
+  right: 1%;
+  animation: constellationFloatTwo 11s ease-in-out infinite;
 }
 
 .constellationAdaptation {
-  bottom: 2%;
-  left: 8%;
-  animation: constellationFloatThree 7.5s ease-in-out infinite;
+  bottom: 0;
+  left: 9%;
+  animation: constellationFloatThree 9.5s ease-in-out infinite;
 }
 
 .constellationAdaptation h3 {
-  color: #ad7017;
+  color: var(--constellation-accent-three);
 }
 
 .constellationDot {
   position: absolute;
-  width: 17px;
-  height: 17px;
-  top: -7px;
-  left: -34px;
-  border: 3px solid rgba(255, 255, 255, 0.92);
+  top: 0.28rem;
+  left: -1.65rem;
+  width: 11px;
+  height: 11px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
   border-radius: 50%;
-  background: #20aeb2;
-  box-shadow:
-    0 0 0 8px rgba(32, 174, 178, 0.12),
-    0 0 0 18px rgba(32, 174, 178, 0.07),
-    0 0 24px rgba(32, 174, 178, 0.46);
-  animation: constellationPulse 3.5s ease-in-out infinite;
+  background: var(--constellation-accent-one);
+  box-shadow: 0 0 0 5px rgba(60, 143, 138, 0.1);
+  animation: constellationPulse 5s ease-in-out infinite;
 }
 
 .constellationTemperament .constellationDot {
-  background: #358fc7;
-  box-shadow:
-    0 0 0 8px rgba(53, 143, 199, 0.12),
-    0 0 0 18px rgba(53, 143, 199, 0.07),
-    0 0 24px rgba(53, 143, 199, 0.46);
+  background: var(--constellation-accent-two);
+  box-shadow: 0 0 0 5px rgba(98, 127, 157, 0.1);
+  animation-delay: 0.8s;
 }
 
 .constellationAdaptation .constellationDot {
-  background: #d2912c;
-  box-shadow:
-    0 0 0 8px rgba(210, 145, 44, 0.12),
-    0 0 0 18px rgba(210, 145, 44, 0.07),
-    0 0 24px rgba(210, 145, 44, 0.42);
+  background: var(--constellation-accent-three);
+  box-shadow: 0 0 0 5px rgba(167, 122, 62, 0.1);
+  animation-delay: 1.6s;
 }
 
-.constellationPath {
-  position: absolute;
-  z-index: 1;
-  height: 1px;
-  transform-origin: left center;
-  background: linear-gradient(
-    90deg,
-    rgba(210, 145, 44, 0.45),
-    rgba(32, 174, 178, 0.47),
-    rgba(53, 143, 199, 0.46)
-  );
-}
-
-.constellationPathOne {
-  width: 40%;
-  top: 31%;
-  left: 29%;
-  transform: rotate(23deg);
-}
-
-.constellationPathTwo {
-  width: 43%;
-  top: 63%;
-  left: 26%;
-  transform: rotate(-18deg);
-}
-
-.constellationPathThree {
-  width: 28%;
-  top: 80%;
-  left: 21%;
-  transform: rotate(-74deg);
-  opacity: 0.75;
-}
-
-.researchConstellationCaption {
-  position: relative;
-  z-index: 2;
-  margin: 0.35rem 0 0;
-  color: #697476;
+.researchConstellation figcaption {
+  margin: 0.6rem 0 0;
+  color: var(--global-fig-caption-color);
   font-family: Georgia, serif;
-  font-size: 0.98rem;
+  font-size: 0.88rem;
   font-style: italic;
   text-align: center;
 }
@@ -381,11 +379,11 @@ body {
   0%,
   100% {
     transform: scale(1);
-    opacity: 0.94;
+    opacity: 0.9;
   }
 
   50% {
-    transform: scale(1.12);
+    transform: scale(1.08);
     opacity: 1;
   }
 }
@@ -397,7 +395,7 @@ body {
   }
 
   50% {
-    transform: translate(7px, -7px);
+    transform: translate(4px, -4px);
   }
 }
 
@@ -408,7 +406,7 @@ body {
   }
 
   50% {
-    transform: translate(-7px, 6px);
+    transform: translate(-4px, 3px);
   }
 }
 
@@ -419,270 +417,40 @@ body {
   }
 
   50% {
-    transform: translate(6px, 7px);
+    transform: translate(3px, 4px);
   }
 }
 
 @media screen and (max-width: 760px) {
-  .researchConstellation {
-    padding: 1.8rem 1.4rem 1.5rem;
-  }
-
-  .researchConstellationMap {
-    min-height: auto;
-    display: grid;
-    gap: 2.25rem;
-    margin: 2rem 0 1.65rem;
-  }
-
-  .constellationItem {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    width: auto;
-    padding-left: 1.65rem;
-    animation: none;
-  }
-
-  .constellationDot {
-    top: 0.34rem;
-    left: 0;
-  }
-
-  .constellationPath {
-    display: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .constellationItem,
-  .constellationDot {
-    animation: none;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  body {
+  body,
+  html[data-theme="dark"] body {
     background-attachment: scroll;
   }
-}
 
-/* Research constellation */
-.researchConstellation {
-  margin: 3.5rem 0 4.25rem;
-  padding: 2.4rem 2.5rem 1.9rem;
-  overflow: hidden;
-  border: 1px solid rgba(31, 89, 91, 0.12);
-  border-radius: 18px;
-  background:
-    radial-gradient(circle at 50% 60%, rgba(100, 193, 194, 0.13), transparent 31%),
-    radial-gradient(circle at 30% 78%, rgba(222, 169, 76, 0.12), transparent 23%),
-    rgba(255, 255, 255, 0.42);
-}
-
-.researchConstellationIntro {
-  position: relative;
-  z-index: 2;
-}
-
-.researchConstellationEyebrow {
-  margin: 0 0 0.35rem;
-  color: #4f8a8d;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.researchConstellation h2 {
-  margin: 0;
-  color: #124f55;
-  font-size: clamp(1.65rem, 3vw, 2.2rem);
-}
-
-.researchConstellationMap {
-  position: relative;
-  min-height: 405px;
-  margin-top: 1.75rem;
-}
-
-.constellationItem {
-  position: absolute;
-  z-index: 2;
-  width: min(32%, 265px);
-}
-
-.constellationItem h3 {
-  margin: 0 0 0.42rem;
-  color: #175b61;
-  font-size: 1.28rem;
-}
-
-.constellationItem p {
-  margin: 0;
-  color: #4d5658;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.constellationInformation {
-  top: 7%;
-  left: 35%;
-  animation: constellationFloatOne 7s ease-in-out infinite;
-}
-
-.constellationTemperament {
-  top: 49%;
-  right: 2%;
-  animation: constellationFloatTwo 8s ease-in-out infinite;
-}
-
-.constellationAdaptation {
-  bottom: 2%;
-  left: 8%;
-  animation: constellationFloatThree 7.5s ease-in-out infinite;
-}
-
-.constellationAdaptation h3 {
-  color: #ad7017;
-}
-
-.constellationDot {
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  top: -7px;
-  left: -34px;
-  border: 3px solid rgba(255, 255, 255, 0.92);
-  border-radius: 50%;
-  background: #20aeb2;
-  box-shadow:
-    0 0 0 8px rgba(32, 174, 178, 0.12),
-    0 0 0 18px rgba(32, 174, 178, 0.07),
-    0 0 24px rgba(32, 174, 178, 0.46);
-  animation: constellationPulse 3.5s ease-in-out infinite;
-}
-
-.constellationTemperament .constellationDot {
-  background: #358fc7;
-  box-shadow:
-    0 0 0 8px rgba(53, 143, 199, 0.12),
-    0 0 0 18px rgba(53, 143, 199, 0.07),
-    0 0 24px rgba(53, 143, 199, 0.46);
-}
-
-.constellationAdaptation .constellationDot {
-  background: #d2912c;
-  box-shadow:
-    0 0 0 8px rgba(210, 145, 44, 0.12),
-    0 0 0 18px rgba(210, 145, 44, 0.07),
-    0 0 24px rgba(210, 145, 44, 0.42);
-}
-
-.constellationPath {
-  position: absolute;
-  z-index: 1;
-  height: 1px;
-  transform-origin: left center;
-  background: linear-gradient(
-    90deg,
-    rgba(210, 145, 44, 0.45),
-    rgba(32, 174, 178, 0.47),
-    rgba(53, 143, 199, 0.46)
-  );
-}
-
-.constellationPathOne {
-  width: 40%;
-  top: 31%;
-  left: 29%;
-  transform: rotate(23deg);
-}
-
-.constellationPathTwo {
-  width: 43%;
-  top: 63%;
-  left: 26%;
-  transform: rotate(-18deg);
-}
-
-.constellationPathThree {
-  width: 28%;
-  top: 80%;
-  left: 21%;
-  transform: rotate(-74deg);
-  opacity: 0.75;
-}
-
-.researchConstellationCaption {
-  position: relative;
-  z-index: 2;
-  margin: 0.35rem 0 0;
-  color: #697476;
-  font-family: Georgia, serif;
-  font-size: 0.98rem;
-  font-style: italic;
-  text-align: center;
-}
-
-@keyframes constellationPulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.94;
-  }
-
-  50% {
-    transform: scale(1.12);
-    opacity: 1;
-  }
-}
-
-@keyframes constellationFloatOne {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(7px, -7px);
-  }
-}
-
-@keyframes constellationFloatTwo {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(-7px, 6px);
-  }
-}
-
-@keyframes constellationFloatThree {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(6px, 7px);
-  }
-}
-
-@media screen and (max-width: 760px) {
   .researchConstellation {
-    padding: 1.8rem 1.4rem 1.5rem;
+    margin: 2.25rem 0 2.75rem;
+    padding: 1.4rem 0.25rem 1.2rem;
   }
 
   .researchConstellationMap {
-    min-height: auto;
     display: grid;
-    gap: 2.25rem;
-    margin: 2rem 0 1.65rem;
+    gap: 2.1rem;
+    min-height: 0;
+    padding: 0.35rem 0 0.35rem 2.25rem;
+  }
+
+  .researchConstellationMap::before {
+    position: absolute;
+    top: 0.8rem;
+    bottom: 0.8rem;
+    left: 0.58rem;
+    width: 1px;
+    content: "";
+    background: var(--constellation-line);
+  }
+
+  .constellationLines {
+    display: none;
   }
 
   .constellationItem {
@@ -692,17 +460,19 @@ body {
     bottom: auto;
     left: auto;
     width: auto;
-    padding-left: 1.65rem;
     animation: none;
+    will-change: auto;
   }
 
   .constellationDot {
-    top: 0.34rem;
-    left: 0;
+    top: 0.3rem;
+    left: -2.05rem;
+    animation: none;
   }
 
-  .constellationPath {
-    display: none;
+  .researchConstellation figcaption {
+    padding-left: 2.25rem;
+    text-align: left;
   }
 }
 
@@ -710,5 +480,6 @@ body {
   .constellationItem,
   .constellationDot {
     animation: none;
+    will-change: auto;
   }
 }

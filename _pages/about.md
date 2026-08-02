@@ -26,16 +26,17 @@ I am a Ph.D. student in Developmental Psychology at Pennsylvania State Universit
   </div>
 </div>
 
-<section class="researchConstellation" aria-labelledby="researchConstellationTitle">
-  <div class="researchConstellationIntro">
-    <p class="researchConstellationEyebrow">Research Themes</p>
-    <h2 id="researchConstellationTitle">How I Think About Development</h2>
-  </div>
+## Research Interest
 
+My research examines how children engage in social and affective processing, including how they attend to, interpret, and internalize emotionally meaningful social signals. In early childhood, these signals are conveyed primarily through key social partners, including parents and peers. I am particularly interested in the active and selective nature of this process, how it reflects children's temperament, and how it supports adaptation to the social environment.
+
+My work pursues two complementary aims. First, I seek to capture social and affective processing as it unfolds in everyday life. I use time intensive longitudinal methods and fine grained experimental paradigms that move beyond static self report measures, allowing me to examine how children construct meaning from social experiences in real time. Second, I aim to identify the general mechanisms and individual differences that shape this process. I develop and test theoretical models of social and affective processing across contexts. I also examine the role of temperament, particularly behavioral inhibition, in shaping how selectively and intensely children engage with social and affective information and in contributing to anxiety across childhood and adolescence.
+
+<figure class="researchConstellation" aria-label="A constellation connecting three research themes">
   <div class="researchConstellationMap">
-    <div class="constellationPath constellationPathOne" aria-hidden="true"></div>
-    <div class="constellationPath constellationPathTwo" aria-hidden="true"></div>
-    <div class="constellationPath constellationPathThree" aria-hidden="true"></div>
+    <svg class="constellationLines" viewBox="0 0 1000 360" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path d="M 360 48 C 535 72, 655 130, 742 220 C 545 260, 337 290, 120 304 C 184 178, 258 95, 360 48"></path>
+    </svg>
 
     <article class="constellationItem constellationInformation">
       <span class="constellationDot" aria-hidden="true"></span>
@@ -56,17 +57,8 @@ I am a Ph.D. student in Developmental Psychology at Pennsylvania State Universit
     </article>
   </div>
 
-  <p class="researchConstellationCaption">
-    These themes interact over time, across contexts, and within each child.
-  </p>
-</section>
-## Research Interest
-
-My research examines how children engage in social and affective processing, including how they attend to, interpret, and internalize emotionally meaningful social signals. In early childhood, these signals are conveyed primarily through key social partners, including parents and peers. I am particularly interested in the active and selective nature of this process, how it reflects children's temperament, and how it supports adaptation to the social environment.
-
-My work pursues two complementary aims. First, I seek to capture social and affective processing as it unfolds in everyday life. I use time intensive longitudinal methods and fine grained experimental paradigms that move beyond static self report measures, allowing me to examine how children construct meaning from social experiences in real time.
-
-Second, I aim to identify the general mechanisms and individual differences that shape this process. I develop and test theoretical models of social and affective processing across contexts. I also examine the role of temperament, particularly behavioral inhibition, in shaping how selectively and intensely children engage with social and affective information and in contributing to anxiety across childhood and adolescence.
+  <figcaption>These themes interact over time, across contexts, and within each child.</figcaption>
+</figure>
 
 *For Research Methods*
 
