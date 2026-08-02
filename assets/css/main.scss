@@ -41,12 +41,35 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* Keep the profile sidebar in the page flow on narrower desktop screens. */
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+/* Desktop layout for the profile sidebar and main content. */
+@media screen and (min-width: 1024px) {
+  #main {
+    display: grid;
+    grid-template-columns: minmax(190px, 240px) minmax(0, 1fr);
+    column-gap: 3rem;
+    align-items: start;
+  }
+
   .sidebar {
-    position: static;
-    height: auto;
-    overflow: visible;
+    position: sticky;
+    top: 90px;
+    width: auto;
+    max-width: none;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
     padding-top: 0;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .page {
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    grid-column: 2;
+    grid-row: 1;
   }
 }
