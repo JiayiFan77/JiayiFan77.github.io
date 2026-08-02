@@ -26,34 +26,40 @@ I am a Ph.D. student in Developmental Psychology at Pennsylvania State Universit
   </div>
 </div>
 
-<section class="researchMap">
-  <p class="researchMapLabel">Research Map</p>
+<section class="researchConstellation" aria-labelledby="researchConstellationTitle">
+  <div class="researchConstellationIntro">
+    <p class="researchConstellationEyebrow">Research Themes</p>
+    <h2 id="researchConstellationTitle">How I Think About Development</h2>
+  </div>
 
-  <div class="researchMapFlow">
-    <article class="researchNode">
-      <span class="researchNumber">01</span>
-      <h3>Social Signals</h3>
+  <div class="researchConstellationMap">
+    <div class="constellationPath constellationPathOne" aria-hidden="true"></div>
+    <div class="constellationPath constellationPathTwo" aria-hidden="true"></div>
+    <div class="constellationPath constellationPathThree" aria-hidden="true"></div>
+
+    <article class="constellationItem constellationInformation">
+      <span class="constellationDot" aria-hidden="true"></span>
+      <h3>Social Information</h3>
       <p>How children attend to, interpret, and internalize emotionally meaningful social information.</p>
     </article>
 
-    <span class="researchConnector" aria-hidden="true">→</span>
-
-    <article class="researchNode">
-      <span class="researchNumber">02</span>
+    <article class="constellationItem constellationTemperament">
+      <span class="constellationDot" aria-hidden="true"></span>
       <h3>Temperament</h3>
       <p>How behavioral inhibition shapes selective engagement with social and affective information.</p>
     </article>
 
-    <span class="researchConnector" aria-hidden="true">→</span>
-
-    <article class="researchNode">
-      <span class="researchNumber">03</span>
+    <article class="constellationItem constellationAdaptation">
+      <span class="constellationDot" aria-hidden="true"></span>
       <h3>Adaptation</h3>
       <p>How early social experiences contribute to adaptation and anxiety across development.</p>
     </article>
   </div>
-</section>
 
+  <p class="researchConstellationCaption">
+    These themes interact over time, across contexts, and within each child.
+  </p>
+</section>
 ## Research Interest
 
 My research examines how children engage in social and affective processing, including how they attend to, interpret, and internalize emotionally meaningful social signals. In early childhood, these signals are conveyed primarily through key social partners, including parents and peers. I am particularly interested in the active and selective nature of this process, how it reflects children's temperament, and how it supports adaptation to the social environment.
