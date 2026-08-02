@@ -61,15 +61,41 @@ html[data-theme="dark"] {
 }
 
 body {
-  background:
-    linear-gradient(rgba(248, 246, 238, 0.86), rgba(248, 246, 238, 0.92)),
-    url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}") center center / cover fixed;
+  background-color: #f8f6ee;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(248, 246, 238, 0.36) 0%,
+      rgba(248, 246, 238, 0.43) 12%,
+      rgba(248, 246, 238, 0.74) 22%,
+      rgba(248, 246, 238, 0.93) 29%,
+      rgba(248, 246, 238, 0.96) 62%,
+      rgba(248, 246, 238, 0.82) 70%,
+      rgba(248, 246, 238, 0.48) 82%,
+      rgba(248, 246, 238, 0.34) 100%
+    ),
+    url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
+  background-position: center, center 46%;
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 html[data-theme="dark"] body {
-  background:
-    linear-gradient(rgba(36, 38, 38, 0.9), rgba(36, 38, 38, 0.94)),
-    url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}") center center / cover fixed;
+  background-color: #242626;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(36, 38, 38, 0.62) 0%,
+      rgba(36, 38, 38, 0.68) 12%,
+      rgba(36, 38, 38, 0.82) 22%,
+      rgba(36, 38, 38, 0.94) 29%,
+      rgba(36, 38, 38, 0.96) 62%,
+      rgba(36, 38, 38, 0.88) 70%,
+      rgba(36, 38, 38, 0.7) 82%,
+      rgba(36, 38, 38, 0.6) 100%
+    ),
+    url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
 }
 
 /* Keep the profile and page in separate grid columns on desktop. */
@@ -422,9 +448,18 @@ html[data-theme="dark"] body {
 }
 
 @media screen and (max-width: 760px) {
-  body,
-  html[data-theme="dark"] body {
+  body {
+    background-image:
+      linear-gradient(rgba(248, 246, 238, 0.88), rgba(248, 246, 238, 0.93)),
+      url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
+    background-position: center, 58% center;
     background-attachment: scroll;
+  }
+
+  html[data-theme="dark"] body {
+    background-image:
+      linear-gradient(rgba(36, 38, 38, 0.91), rgba(36, 38, 38, 0.95)),
+      url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
   }
 
   .researchConstellation {
