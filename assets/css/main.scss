@@ -468,3 +468,247 @@ body {
     background-attachment: scroll;
   }
 }
+
+/* Research constellation */
+.researchConstellation {
+  margin: 3.5rem 0 4.25rem;
+  padding: 2.4rem 2.5rem 1.9rem;
+  overflow: hidden;
+  border: 1px solid rgba(31, 89, 91, 0.12);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 60%, rgba(100, 193, 194, 0.13), transparent 31%),
+    radial-gradient(circle at 30% 78%, rgba(222, 169, 76, 0.12), transparent 23%),
+    rgba(255, 255, 255, 0.42);
+}
+
+.researchConstellationIntro {
+  position: relative;
+  z-index: 2;
+}
+
+.researchConstellationEyebrow {
+  margin: 0 0 0.35rem;
+  color: #4f8a8d;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.researchConstellation h2 {
+  margin: 0;
+  color: #124f55;
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+}
+
+.researchConstellationMap {
+  position: relative;
+  min-height: 405px;
+  margin-top: 1.75rem;
+}
+
+.constellationItem {
+  position: absolute;
+  z-index: 2;
+  width: min(32%, 265px);
+}
+
+.constellationItem h3 {
+  margin: 0 0 0.42rem;
+  color: #175b61;
+  font-size: 1.28rem;
+}
+
+.constellationItem p {
+  margin: 0;
+  color: #4d5658;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.constellationInformation {
+  top: 7%;
+  left: 35%;
+  animation: constellationFloatOne 7s ease-in-out infinite;
+}
+
+.constellationTemperament {
+  top: 49%;
+  right: 2%;
+  animation: constellationFloatTwo 8s ease-in-out infinite;
+}
+
+.constellationAdaptation {
+  bottom: 2%;
+  left: 8%;
+  animation: constellationFloatThree 7.5s ease-in-out infinite;
+}
+
+.constellationAdaptation h3 {
+  color: #ad7017;
+}
+
+.constellationDot {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: -7px;
+  left: -34px;
+  border: 3px solid rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  background: #20aeb2;
+  box-shadow:
+    0 0 0 8px rgba(32, 174, 178, 0.12),
+    0 0 0 18px rgba(32, 174, 178, 0.07),
+    0 0 24px rgba(32, 174, 178, 0.46);
+  animation: constellationPulse 3.5s ease-in-out infinite;
+}
+
+.constellationTemperament .constellationDot {
+  background: #358fc7;
+  box-shadow:
+    0 0 0 8px rgba(53, 143, 199, 0.12),
+    0 0 0 18px rgba(53, 143, 199, 0.07),
+    0 0 24px rgba(53, 143, 199, 0.46);
+}
+
+.constellationAdaptation .constellationDot {
+  background: #d2912c;
+  box-shadow:
+    0 0 0 8px rgba(210, 145, 44, 0.12),
+    0 0 0 18px rgba(210, 145, 44, 0.07),
+    0 0 24px rgba(210, 145, 44, 0.42);
+}
+
+.constellationPath {
+  position: absolute;
+  z-index: 1;
+  height: 1px;
+  transform-origin: left center;
+  background: linear-gradient(
+    90deg,
+    rgba(210, 145, 44, 0.45),
+    rgba(32, 174, 178, 0.47),
+    rgba(53, 143, 199, 0.46)
+  );
+}
+
+.constellationPathOne {
+  width: 40%;
+  top: 31%;
+  left: 29%;
+  transform: rotate(23deg);
+}
+
+.constellationPathTwo {
+  width: 43%;
+  top: 63%;
+  left: 26%;
+  transform: rotate(-18deg);
+}
+
+.constellationPathThree {
+  width: 28%;
+  top: 80%;
+  left: 21%;
+  transform: rotate(-74deg);
+  opacity: 0.75;
+}
+
+.researchConstellationCaption {
+  position: relative;
+  z-index: 2;
+  margin: 0.35rem 0 0;
+  color: #697476;
+  font-family: Georgia, serif;
+  font-size: 0.98rem;
+  font-style: italic;
+  text-align: center;
+}
+
+@keyframes constellationPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.94;
+  }
+
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+
+@keyframes constellationFloatOne {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(7px, -7px);
+  }
+}
+
+@keyframes constellationFloatTwo {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-7px, 6px);
+  }
+}
+
+@keyframes constellationFloatThree {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(6px, 7px);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .researchConstellation {
+    padding: 1.8rem 1.4rem 1.5rem;
+  }
+
+  .researchConstellationMap {
+    min-height: auto;
+    display: grid;
+    gap: 2.25rem;
+    margin: 2rem 0 1.65rem;
+  }
+
+  .constellationItem {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    padding-left: 1.65rem;
+    animation: none;
+  }
+
+  .constellationDot {
+    top: 0.34rem;
+    left: 0;
+  }
+
+  .constellationPath {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .constellationItem,
+  .constellationDot {
+    animation: none;
+  }
+}
