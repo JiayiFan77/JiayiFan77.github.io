@@ -35,7 +35,9 @@ My work pursues two complementary aims. First, I seek to capture social and affe
 <figure class="researchConstellation" aria-label="A constellation connecting three research themes">
   <div class="researchConstellationMap">
     <svg class="constellationLines" viewBox="0 0 1000 360" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-      <path d="M 360 48 C 535 72, 655 130, 742 220 C 545 260, 337 290, 120 304 C 184 178, 258 95, 360 48"></path>
+      <path d="M 357 24 C 510 55, 625 120, 700 197"></path>
+      <path d="M 700 197 C 525 215, 290 235, 68 261"></path>
+      <path d="M 68 261 C 140 135, 230 65, 357 24"></path>
     </svg>
 
     <article class="constellationItem constellationInformation">

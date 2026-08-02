@@ -44,7 +44,7 @@
   --constellation-ink: #245c61;
   --constellation-text: #4d595a;
   --constellation-line: rgba(54, 115, 116, 0.36);
-  --constellation-wash: rgba(255, 255, 255, 0.24);
+  --constellation-wash: rgba(248, 246, 238, 0.84);
   --constellation-accent-one: #3c8f8a;
   --constellation-accent-two: #627f9d;
   --constellation-accent-three: #a77a3e;
@@ -54,7 +54,7 @@ html[data-theme="dark"] {
   --constellation-ink: #b8dddd;
   --constellation-text: #e1e7e7;
   --constellation-line: rgba(184, 221, 221, 0.35);
-  --constellation-wash: rgba(36, 43, 43, 0.38);
+  --constellation-wash: rgba(36, 43, 43, 0.84);
   --constellation-accent-one: #76c0b9;
   --constellation-accent-two: #9ab4ce;
   --constellation-accent-three: #d0a86d;
@@ -65,14 +65,14 @@ body {
   background-image:
     linear-gradient(
       90deg,
-      rgba(248, 246, 238, 0.36) 0%,
-      rgba(248, 246, 238, 0.43) 12%,
-      rgba(248, 246, 238, 0.74) 22%,
-      rgba(248, 246, 238, 0.93) 29%,
-      rgba(248, 246, 238, 0.96) 62%,
-      rgba(248, 246, 238, 0.82) 70%,
-      rgba(248, 246, 238, 0.48) 82%,
-      rgba(248, 246, 238, 0.34) 100%
+      rgba(248, 246, 238, 0.46) 0%,
+      rgba(248, 246, 238, 0.52) 12%,
+      rgba(248, 246, 238, 0.76) 22%,
+      rgba(248, 246, 238, 0.89) 29%,
+      rgba(248, 246, 238, 0.92) 62%,
+      rgba(248, 246, 238, 0.79) 70%,
+      rgba(248, 246, 238, 0.55) 82%,
+      rgba(248, 246, 238, 0.44) 100%
     ),
     url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
   background-position: center, center 46%;
@@ -86,14 +86,14 @@ html[data-theme="dark"] body {
   background-image:
     linear-gradient(
       90deg,
-      rgba(36, 38, 38, 0.62) 0%,
-      rgba(36, 38, 38, 0.68) 12%,
+      rgba(36, 38, 38, 0.68) 0%,
+      rgba(36, 38, 38, 0.73) 12%,
       rgba(36, 38, 38, 0.82) 22%,
-      rgba(36, 38, 38, 0.94) 29%,
-      rgba(36, 38, 38, 0.96) 62%,
-      rgba(36, 38, 38, 0.88) 70%,
-      rgba(36, 38, 38, 0.7) 82%,
-      rgba(36, 38, 38, 0.6) 100%
+      rgba(36, 38, 38, 0.9) 29%,
+      rgba(36, 38, 38, 0.92) 62%,
+      rgba(36, 38, 38, 0.84) 70%,
+      rgba(36, 38, 38, 0.75) 82%,
+      rgba(36, 38, 38, 0.67) 100%
     ),
     url("{{ '/images/John_Singer_Sargent_-_Carnation,_Lily,_Lily,_Rose_-_Google_Art_Project.jpg' | relative_url }}");
 }
@@ -290,6 +290,8 @@ html[data-theme="dark"] body {
 
 /* Research constellation */
 .researchConstellation {
+  display: block;
+  width: 100%;
   margin: 2.75rem 0 3.25rem;
   padding: 1.45rem 0.5rem 1.15rem;
   overflow: hidden;
@@ -303,6 +305,7 @@ html[data-theme="dark"] body {
 
 .researchConstellationMap {
   position: relative;
+  width: 100%;
   min-height: 360px;
 }
 
