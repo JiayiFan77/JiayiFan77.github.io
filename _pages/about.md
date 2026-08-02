@@ -26,6 +26,34 @@ I am a Ph.D. student in Developmental Psychology at Pennsylvania State Universit
   </div>
 </div>
 
+<section class="researchMap">
+  <p class="researchMapLabel">Research Map</p>
+
+  <div class="researchMapFlow">
+    <article class="researchNode">
+      <span class="researchNumber">01</span>
+      <h3>Social Signals</h3>
+      <p>How children attend to, interpret, and internalize emotionally meaningful social information.</p>
+    </article>
+
+    <span class="researchConnector" aria-hidden="true">→</span>
+
+    <article class="researchNode">
+      <span class="researchNumber">02</span>
+      <h3>Temperament</h3>
+      <p>How behavioral inhibition shapes selective engagement with social and affective information.</p>
+    </article>
+
+    <span class="researchConnector" aria-hidden="true">→</span>
+
+    <article class="researchNode">
+      <span class="researchNumber">03</span>
+      <h3>Adaptation</h3>
+      <p>How early social experiences contribute to adaptation and anxiety across development.</p>
+    </article>
+  </div>
+</section>
+
 ## Research Interest
 
 My research examines how children engage in social and affective processing, including how they attend to, interpret, and internalize emotionally meaningful social signals. In early childhood, these signals are conveyed primarily through key social partners, including parents and peers. I am particularly interested in the active and selective nature of this process, how it reflects children's temperament, and how it supports adaptation to the social environment.
