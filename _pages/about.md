@@ -72,16 +72,13 @@ My advisor uses a metaphor to describe research methods as languages: a mother t
 
 As an undergraduate, I worked on projects spanning developmental neuroscience, parent child relationships, social anxiety, and adolescent intervention.
 
-* **Dr. Ka Ip, University of Minnesota**  
+* Dr. Ka Ip, University of Minnesota  
   Neighborhood influences on brain structure.
-
-* **Dr. Zhi Li, Mt. Hope Family Center, University of Rochester**  
+* Dr. Zhi Li, Mt. Hope Family Center, University of Rocheste
   Parent child relationships and children's sensory processing sensitivity.
-
-* **Dr. Yujia Peng, Peking University**  
+* Dr. Yujia Peng, Peking University
   Cognitive processes in social anxiety.
-
-* **Dr. Yinyin Zang, Peking University**  
+* Dr. Yinyin Zang, Peking University
   Adolescent interventions.
 
 Outside of research, I survive on three nutrients: board games, drums, and travel.
