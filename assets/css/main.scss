@@ -73,3 +73,27 @@
     grid-row: 1;
   }
 }
+
+.author__urls-wrapper .btn {
+  display: none;
+}
+
+.author__urls {
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: auto;
+}
+
+.author__urls::before,
+.author__urls::after {
+  display: none;
+}
+
+.author__urls li {
+  white-space: normal;
+}
