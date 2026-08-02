@@ -119,3 +119,29 @@
 .sidebar .author__content {
   margin-bottom: 0.75rem;
 }
+
+.educationItem {
+  margin-bottom: 1.75rem;
+}
+
+.educationHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.educationDate {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 640px) {
+  .educationHeader {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .educationDate {
+    white-space: normal;
+  }
+}
