@@ -97,3 +97,24 @@
 .author__urls li {
   white-space: normal;
 }
+
+sidebar .author__avatar,
+.sidebar .author__content,
+.sidebar .author__urls-wrapper {
+  display: block;
+  width: auto;
+  padding: 0;
+}
+
+.sidebar .author__avatar {
+  margin-bottom: 0.75rem;
+}
+
+.sidebar .author__avatar img {
+  width: 120px;
+  max-width: 100%;
+}
+
+.sidebar .author__content {
+  margin-bottom: 0.75rem;
+}
