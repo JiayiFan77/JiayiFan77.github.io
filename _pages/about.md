@@ -11,10 +11,20 @@ I am a Ph.D. student in Developmental Psychology at Pennsylvania State Universit
 
 ## Education
 
-Ph.D. in Developmental Psychology, Pennsylvania State University <img src="../images/psu_logo.jpg" alt="PSU Logo" style="width:24px; vertical-align:middle; margin-right:6px;"> <span style="float:right;">2025 to Present</span> <span style="font-size:16px;">
-*Advisor: Dr. Koraly Pérez-Edgar*</span>
+<div class="educationItem">
+  <div class="educationHeader">
+    <span>Ph.D. in Developmental Psychology, Pennsylvania State University <img src="../images/psu_logo.jpg" alt="PSU Logo" style="width:24px; vertical-align:middle;"></span>
+    <span class="educationDate">2025 to Present</span>
+  </div>
+  <div><em>Advisor: Dr. Koraly Pérez-Edgar</em></div>
+</div>
 
-B.S. in Psychology, Peking University <img src="../images/pku_logo.png" alt="PKU Logo" style="width:30px; vertical-align:middle;"> <span style="float:right;">2020 to 2025</span>
+<div class="educationItem">
+  <div class="educationHeader">
+    <span>B.S. in Psychology, Peking University <img src="../images/pku_logo.png" alt="PKU Logo" style="width:30px; vertical-align:middle;"></span>
+    <span class="educationDate">2020 to 2025</span>
+  </div>
+</div>
 
 ## Research Interest
 
