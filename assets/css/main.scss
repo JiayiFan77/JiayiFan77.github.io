@@ -213,3 +213,14 @@
     transform: rotate(90deg);
   }
 }
+body {
+  background:
+    linear-gradient(rgba(248, 246, 238, 0.84), rgba(248, 246, 238, 0.9)),
+    url("/images/carnation_lily_lily_rose.jpg") center center / cover fixed;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background-attachment: scroll;
+  }
+}
